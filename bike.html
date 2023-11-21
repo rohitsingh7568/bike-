@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+
+        .bike {
+            width: 400px;
+            height: 200px;
+            left: 140px;
+            background-image: url("./without-removebg-preview.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .tier1 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: -222px;
+            top: 46px;
+            border-radius: 50%;
+            background-image: url("./teir.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: bike1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .tier2 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: -90px;
+            top: 44px;
+            border-radius: 50%;
+            background-image: url("./teir.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: bike2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+       
+
+         @keyframes bike1 {
+            0% {
+                 left: -222px;
+            top: 46px;
+                transform: rotate(-360deg);
+
+
+
+            }
+
+            360% {
+                  left: -222px;
+            top: 46px;
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bike2 {
+            0% {
+                 left: -90px;
+            top: 44px;
+                transform: rotate(-360deg);
+
+
+
+            }
+
+            360% {
+                left: -90px;
+            top: 44px;
+                transform: rotate(360deg);
+            }
+        } 
+
+        .race {
+            position: relative;
+            height: 200px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation-name: race;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index: 4;
+        }
+
+         @keyframes race {
+            0% {
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
+            }
+
+            7% {
+                left: 40vh;
+                top: 0;
+                transform: rotate(0deg);
+            }
+            14%{
+    left: 80vh;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  21%{
+    left: 112vh;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  28%{
+    left: 163vh;
+    top: 0;
+    transform: rotate(30deg);
+  }
+  35%{
+    left: 163vh;
+    top: 25vh;
+    transform: rotate(90deg);
+  }
+  42%{
+    left: 163vh;
+    top: 50vh;
+    transform: rotate(90deg);
+  }
+  49%{
+    left: 163vh;
+    top: 75vh;
+    transform: rotate(165deg);
+  }
+  56%{
+    left: 112vh;
+    top: 75vh;
+    transform: rotate(180deg);
+  }
+  63%{
+    left: 80vh;
+    top: 75vh;
+    transform: rotate(180deg);
+  }
+  70%{
+    left: 40vh;
+    top: 75vh;
+    transform: rotate(180deg);
+  }
+  77%{
+    left: -5vh;
+    top: 75vh;
+    transform: rotate(240deg);
+  }
+  85%{
+    left: -5vh;
+    top: 50vh;
+    transform: rotate(270deg);
+  }
+  93%{
+    left: -5vh;
+    top: 25vh;
+    transform: rotate(270deg);
+  }
+  100%{
+    left: -5vh;
+    top: 0;
+    transform: rotate(270deg);
+  }
+
+}
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="race" >
+        <img  class=" bike" src="./without-removebg-preview.png" alt="">
+        <img  class="tier1" src="./teir.jpg" alt="">
+        <img  class="tier2" src="./teir.jpg" alt="">
+    </div>
+
+   
+
+
+</body>
+
+</html>
